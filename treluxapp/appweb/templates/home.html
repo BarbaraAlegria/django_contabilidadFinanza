@@ -1,8 +1,16 @@
 {% extends 'base.html' %}
-{% load static %}
 
 {% block contenido %}
-
-
-
+  <div class="background-container">
+    
+    <div class="button-container">
+      <button onclick="window.location.href='{% url 'factura' %}'">
+        Factura
+      </button>
+      <button onclick="window.location.href='{% url 'factorVenta' %}'">
+        Factor Venta
+      </button>
+    </div>
+  </div>
 {% endblock %}
+
